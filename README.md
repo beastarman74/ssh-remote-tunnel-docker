@@ -1,7 +1,15 @@
 # ssh-remote-tunnel-docker
-SSH remote tunnel docker.
+SSH SSH remote tunnel docker.
+
 
 https://hub.docker.com/r/beastarman/ssh-remote-tunnel
+
+With thanks to https://hub.docker.com/r/nowsci/sshtunnel which helped me understand the method of starting a tunnel in a docker image.
+
+This is a similar image but has only 100 ports exposed - 10000 - 100100 instead of exposing all ports. Having all ports exposed seemed to create a significant slow down in docker ps, portainer, and android docker apps when using multiple container tunnels.
+
+example docker-compose file:
+
 
 
 
